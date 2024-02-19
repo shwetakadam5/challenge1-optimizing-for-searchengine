@@ -1,13 +1,16 @@
+/* Universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element selector */
 body {
     background-color: #d9dcd6;
 }
 
+/* Class selectors */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,6 +44,8 @@ body {
     margin-left: 25px;
 }
 
+/* Element selectors */
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -49,6 +54,8 @@ a {
 p {
     font-size: 16px;
 }
+
+/* Class selectors */
 
 .hero {
     height: 800px;
