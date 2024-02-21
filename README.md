@@ -1,65 +1,89 @@
-# <Your-Project-Title>
+# Refactoring an existing site to improve web accessibility.
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+- An increasingly important consideration for businesses, web **accessibility** ensures that people with disabilities can access a      website using assistive technologies like video captions, screen readers, and braille keyboards. 
+- Accessibility is good for business&mdash;for one thing, accessible sites rank higher in search engines like Google.
+- It also helps companies avoid litigation, which might arise if people with disabilities can't access a website.
+- Refactoring the code so that the existing website has better web accessibilty and also the code base fulfils the acceptance criteria to ensure that we have cleaner functional code base. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 
 - [Installation](#installation)
+- [User Story](#user-story)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Tests](#tests)
+- [Acceptance Criteria](#acceptance-criteria)
 - [License](#license)
+
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Follow these instructions to create your project and deploy it to GitHub Pages:
+
+1. Create a new repository on your GitHub account and clone it to your computer.
+
+2. When you're ready to deploy, use the git add, git commit, and git push commands to save and push your code to your GitHub repository.
+
+3. Navigate to your GitHub repository in the browser and then select the Settings tab on the right side of the page.
+
+4. On the Settings page, select Pages on the left side of the page. On the GitHub Pages screen, choose main in the dropdown under Branch. Click the Save button.
+
+5. Navigate to <your-github-username.github.io/your-repository-name> and you will find that your new webpage has gone live! For example, if your GitHub username is "lernantino" and the project is "css-demo-site", then your URL would be <lernantino.github.io/css-demo-site>.
+
+## User Story
+
+```
+AS A marketing agency
+I WANT a codebase that follows accessibility standards
+SO THAT our own site is optimized for search engines
+```
 
 ## Usage
+Once the website is live, the following webpage should be displayed to the user where all the navigation links should navigate to necessary sections and provide accessibility texts for the various tools.
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+![alt text](assets/images/Screenshot_22-2-2024_32252_shwetakadam5.github.io.jpeg)
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+**Test 1** : Click on all the links on the navigation and check if redirected to the appropriate content.
+- Click on the link Search Engine Optimization : User will be navigated to the details of search engine optimization on the webpage.
+- Click on the link Online Reputation Management : User will be navigated to the details of online reputation management on the webpage.
+- Click on the link Social Media Marketing : User will be navigated to the details of Social Media Marketing on the webpage.
+
+**Test 2** : Hovering on the navigation links will display appropriate text.
+- Hover on the link Search Engine Optimization : Hover text will display "Click to visit Search Engine Optimization"
+- Hover on the link Online Reputation Management : Hover text will display "Click to visit Online Reputation Management"
+- Hover on the link Social Media Marketing : Hover text will display "Click to visit Social Media Marketing"
+
+**Test 3** :
+- Hover on the images : Hover text will display the title of the respective image.
+
+**Test 4** : 
+- Check if appropriate alt text is displayed if the image fails to load for some reason.
+
+**Test 5**: 
+- Check appropriate headers are displayed for every section.
+
+**Test 6** : 
+- Check the title of the webpage upon loading.
+
+## Acceptance Criteria
+
+```
+GIVEN a webpage meets accessibility standards
+WHEN I view the source code
+THEN I find semantic HTML elements
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I view the icon and image elements
+THEN I find accessible alt attributes
+WHEN I view the heading attributes
+THEN they fall in sequential order
+WHEN I view the title element
+THEN I find a concise, descriptive title
+```
+
+## License
+
+MIT
