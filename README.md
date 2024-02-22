@@ -42,6 +42,11 @@ SO THAT our own site is optimized for search engines
 ## Usage
 Once the website is live, the following webpage should be displayed to the user where all the navigation links should navigate to necessary sections and provide accessibility texts for the various tools.
 
+Link for the repository : https://github.com/shwetakadam5/challenge1-optimizing-for-searchengine
+
+Link for the website : https://shwetakadam5.github.io/challenge1-optimizing-for-searchengine/
+
+
 ![alt text](assets/images/Screenshot_22-2-2024_32252_shwetakadam5.github.io.jpeg)
 
 ## Tests
